@@ -1,7 +1,10 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @theme {
-  --animate-spin: spin 7s linear infinite; 
+  --animate-spin: spin 7s linear infinite;
+  --font-patrickHand: 'Patrick Hand SC', cursive;
+  --font-gochiHand: 'Gochi Hand', cursive;
+  --font-antonDisplay: 'Anton', sans-serif;
 
   @keyframes spin {
     to {
@@ -11,6 +14,12 @@
 }
 
 @layer components {
+  .bg-landing {
+    background-image: url(assets/landing.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
   .flexrow-center {
     display: flex;
     flex-direction: row;
@@ -53,14 +62,14 @@
     top: 0;
     left: 0;
   }
-  
+
   .absolute-top-center {
     position: absolute;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
   }
-  
+
   .absolute-top-right {
     position: absolute;
     top: 0;
@@ -73,14 +82,14 @@
     left: 0;
     transform: translateY(-50%);
   }
-  
+
   .absolute-middle {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  
+
   .absolute-middle-right {
     position: absolute;
     top: 50%;
@@ -93,14 +102,14 @@
     bottom: 0;
     left: 0;
   }
-  
+
   .absolute-bottom-center {
     position: absolute;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
   }
-  
+
   .absolute-bottom-right {
     position: absolute;
     bottom: 0;
@@ -112,54 +121,54 @@
     top: 0;
     left: 0;
   }
-  
+
   .fixed-top-center {
     position: fixed;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
   }
-  
+
   .fixed-top-right {
     position: fixed;
     top: 0;
     right: 0;
   }
-  
+
   .fixed-middle-left {
     position: fixed;
     top: 50%;
     left: 0;
     transform: translateY(-50%);
   }
-  
+
   .fixed-middle {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  
+
   .fixed-middle-right {
     position: fixed;
     top: 50%;
     right: 0;
     transform: translateY(-50%);
   }
-  
+
   .fixed-bottom-left {
     position: fixed;
     bottom: 0;
     left: 0;
   }
-  
+
   .fixed-bottom-center {
     position: fixed;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
   }
-  
+
   .fixed-bottom-right {
     position: fixed;
     bottom: 0;
