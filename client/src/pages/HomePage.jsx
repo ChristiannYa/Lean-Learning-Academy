@@ -1,6 +1,6 @@
-import About from '../sections/1_landing-page/About';
-import Card from '../sections/1_landing-page/Card';
-import { landingPageCards } from '../constants/1_landing-page';
+import About from '../sections/landing-page/About';
+import Card from '../sections/landing-page/Card';
+import { landingPageCards } from '../constants/landing-page';
 
 const LandingPage = () => {
   return (

@@ -8,24 +8,40 @@
   justify-content: space-between;
   align-items: center;
 
-  &__linksContainer {
+  &__links-container {
     // color: var(--color-tertiary); // Any page
     color: var(--color-neutral-white); // Home page
     font-family: var(--font-leagueSpartan);
+    text-align: center;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 0 8px;
+    gap: 0 6px;
 
     li {
-      cursor:pointer;
+      cursor: pointer;
 
-      padding: 4px 8px;
+      a {                
+        padding: 2px 10px;
+
+        display: inline-block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
     }
 
-    @media (hover:hover) {
-      li:hover {
+    &__inactive {
+      color: var(--color-neutral-white);
+    }
+
+    &__active {
+      color: var(--color-primary);
+    }
+
+    @media (hover: hover) {
+      &__inactive:hover {
         color: var(--color-primary); //  Any page
       }
     }
