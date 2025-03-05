@@ -1,12 +1,15 @@
 import './App.css';
 import './styles/Logo.scss';
+import './styles/Nav.scss';
+
+import Nav from './components/Nav';
+import LandingPage from './pages/1-LandingPage';
 
 const App = () => {
   return (
-    <div className="bg-[#1c1c1c] wh-screen p-4">
-      <div className="wh-full relative">
-        <div className="absolute-middle-left flexcol-center gap-y-2"></div>
-      </div>
+    <div>
+      <Nav />
+      <LandingPage />
     </div>
   );
 };

@@ -1,0 +1,32 @@
+.logo {
+  // color: var(--color-tertiary); // Any page
+  color: var(--color-neutral-white); // Home page
+
+  &__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 0 20px;
+  }
+
+  &__left {
+    line-height: 1.1;
+
+    position: relative;
+
+    &::after {
+      content: '';
+      // background: var(--color-tertiary); // Any page
+      background: var(--color-neutral-white); // Home page
+
+      width: 2px;
+      height: 100%;
+
+      position: absolute;
+      top: 0;
+      left: 86px;
+    }
+  }
+}

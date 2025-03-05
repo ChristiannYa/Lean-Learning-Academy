@@ -1,13 +1,13 @@
 const Logo = () => {
   return (
-    <div className="text-white font-antonDisplay border">
-      <div className="flexrow-center">
-        <div className="text-2xl">
+    <div className="font-antonDisplay logo">
+      <div className="logo__content">
+        <div className="text-xl logo__left">
           <p>The Learn</p>
           <p>Learning</p>
           <p>Academy</p>
         </div>
-        <div className="text-lg text-start">
+        <div className="text-md text-start logo__right">
           <p>Unlock</p>
           <p>Your</p>
           <p>Potential</p>

@@ -1,0 +1,33 @@
+.nav {
+  // background-color:var(--color-neutral-white); // Any page
+  background-color: var(--color-tertiary); // Home page
+
+  padding: 16px 32px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__linksContainer {
+    // color: var(--color-tertiary); // Any page
+    color: var(--color-neutral-white); // Home page
+    font-family: var(--font-leagueSpartan);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 8px;
+
+    li {
+      cursor:pointer;
+
+      padding: 4px 8px;
+    }
+
+    @media (hover:hover) {
+      li:hover {
+        color: var(--color-primary); //  Any page
+      }
+    }
+  }
+}

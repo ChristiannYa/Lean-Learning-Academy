@@ -2,9 +2,16 @@
 
 @theme {
   --animate-spin: spin 7s linear infinite;
-  --font-patrickHand: 'Patrick Hand SC', cursive;
-  --font-gochiHand: 'Gochi Hand', cursive;
+  
   --font-antonDisplay: 'Anton', sans-serif;
+  --font-gochiHand: 'Gochi Hand', cursive;
+  --font-leagueSpartan: 'League Spartan', sans-serif;
+  --font-patrickHand: 'Patrick Hand SC', cursive;
+
+  --color-primary: #a855f7; /* a855f7 */
+  --color-secondary: #EEC201; /* EEC201 */
+  --color-tertiary: #4B5563;
+  --color-neutral-white: #E5E7EB;
 
   @keyframes spin {
     to {
@@ -14,12 +21,12 @@
 }
 
 @layer components {
-  .bg-landing {
-    background-image: url(assets/landing.jpg);
-    background-size: cover;
-    background-position: center;
+  .screenMain {
+    width: min(90%, 1200px);
+    margin-inline: auto;
   }
-
+  
+  /* Helper Classes */
   .flexrow-center {
     display: flex;
     flex-direction: row;

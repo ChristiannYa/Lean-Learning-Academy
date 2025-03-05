@@ -1,0 +1,31 @@
+.card {
+  border-radius: 6px;
+
+  width: 260px;
+  height: 90px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+
+  .iconWrapper {
+    background-color: var(--color-primary);
+
+    border: solid 5px var(--color-tertiary);
+    border-radius: 10px;
+
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    transform: translateY(-50%);
+  }
+}
