@@ -7,13 +7,13 @@ import '../App.css';
 
 const Layout = () => {
   return (
-    <div>
+    <div className="bg-tertiary min-h-screen">
       <Nav />
-      <main>
+      <main className="pt-8">
         <Outlet />
       </main>
     </div>
-  )
+  );
 }
 
 export default Layout
