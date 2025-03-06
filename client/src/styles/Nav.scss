@@ -21,8 +21,9 @@
 
     li {
       cursor: pointer;
+      position: relative; // Added for dropdown positioning
 
-      a {                
+      a {
         padding: 2px 10px;
 
         display: inline-block;
@@ -30,18 +31,103 @@
         justify-content: center;
         align-items: center;
       }
+
+      // Dropdown styling
+      &.has-dropdown {
+        &:hover .dropdown-menu {
+          display: block;
+          opacity: 1;
+        }
+      }
     }
 
-    &__inactive {
+    // Inactive link style
+    &--inactive {
       color: var(--color-neutral-white);
     }
 
-    &__active {
+    // Active link style
+    &--active {
       color: var(--color-primary);
     }
 
+    .dropdown-menu {
+      background-color: var(--color-tertiary);
+      box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 5px;
+      border-radius: 4px;
+      opacity: 0;
+
+      min-width: 180px;
+      padding: 8px 0;
+
+      display: none;
+
+      position: absolute;
+      top: 100%;
+      left: 0;
+      z-index: 1;
+
+      &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+      }
+
+      &__item {
+        text-align: left;
+
+        margin: 0;
+
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.1);
+        }
+      }
+
+      &__link {
+        display: block;
+        padding: 8px 16px;
+        font-size: 0.9rem;
+        letter-spacing: 0.5px;
+
+        // Inactive dropdown link style
+        &--inactive {
+          color: var(--color-neutral-white);
+        }
+
+        // Active dropdown link style
+        &--active {
+          color: var(--color-primary);
+          font-weight: 500;
+          background-color: rgba(255, 255, 255, 0.05);
+        }
+
+        &:hover {
+          color: var(--color-primary);
+        }
+      }
+    }
+
+    .dropdown-arrow {
+      border-top: 6px solid var(--color-neutral-white);
+      border-right: 5px solid transparent;
+      border-left: 5px solid transparent;
+      transition: transform 0.3s ease;
+
+      display: inline-block;
+      width: 0;
+      height: 0;
+      margin-left: 5px;
+      vertical-align: middle;
+    }
+
     @media (hover: hover) {
-      &__inactive:hover {
+      li.has-dropdown:hover .dropdown-arrow {
+        transform: rotate(180deg);
+      }
+    }
+
+    @media (hover: hover) {
+      &--inactive:hover {
         color: var(--color-primary); //  Any page
       }
     }

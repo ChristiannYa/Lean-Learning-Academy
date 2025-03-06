@@ -1,7 +1,5 @@
-const Shop = () => {
-  return (
-    <div>Shop</div>
-  )
-}
+const ShopPage = () => {
+  return <div>ShopPage</div>;
+};
 
-export default Shop
+export default ShopPage;

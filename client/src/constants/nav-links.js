@@ -1,22 +1,40 @@
 export const navLinks = [
   {
     path: '/',
-    label: 'Home'
+    label: 'Home',
   },
   {
     path: '/about-us',
-    label: 'About Us' 
+    label: 'About Us',
   },
   {
     path: '/courses',
-    label: 'Courses'
+    label: 'Courses',
+    children: [
+      {
+        path: '/courses/chess',
+        label: 'Chess',
+      },
+      {
+        path: '/courses/english',
+        label: 'English',
+      },
+      {
+        path: '/courses/japanese',
+        label: 'Japanese',
+      },
+      {
+        path: '/courses/photography',
+        label: 'Photography',
+      },
+    ],
   },
   {
     path: '/shop',
-    label: 'Shop'
+    label: 'Shop',
   },
   {
     path: '/login',
-    label: 'Login'
-  }
+    label: 'Login',
+  },
 ];
