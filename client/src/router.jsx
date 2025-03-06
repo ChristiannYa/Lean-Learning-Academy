@@ -22,38 +22,38 @@ const mainRoutes = [
     element: <LandingPage />,
   },
   {
-    path: 'about-us',
+    path: '/about-us',
     element: <AboutUsPage />,
   },
   {
-    path: 'login',
+    path: '/login',
     element: <LoginPage />,
   },
   {
-    path: 'shop',
+    path: '/shop',
     element: <ShopPage />,
   },
 ];
 
 const courseRoutes = [
   {
-    path: 'courses',
+    path: '/courses',
     element: <CoursesPage />,
   },
   {
-    path: 'courses/chess',
+    path: '/courses/chess',
     element: <ChessCoursePage />,
   },
   {
-    path: 'courses/english',
+    path: '/courses/english',
     element: <EnglishCoursePage />,
   },
   {
-    path: 'courses/japanese',
+    path: '/courses/japanese',
     element: <JapaneseCoursePage />,
   },
   {
-    path: 'courses/photography',
+    path: '/courses/photography',
     element: <PhotographyCoursePage />,
   },
 ];

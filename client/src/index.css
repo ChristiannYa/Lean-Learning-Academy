@@ -2,16 +2,16 @@
 
 @theme {
   --animate-spin: spin 7s linear infinite;
-  
+
   --font-antonDisplay: 'Anton', sans-serif;
   --font-gochiHand: 'Gochi Hand', cursive;
   --font-leagueSpartan: 'League Spartan', sans-serif;
   --font-patrickHand: 'Patrick Hand SC', cursive;
 
-  --color-primary: #a855f7; /* a855f7 */
-  --color-secondary: #EEC201; /* EEC201 */
-  --color-tertiary: #4B5563;
-  --color-neutral-white: #E5E7EB;
+  --color-primary: #EEC201; /* a855f7 */
+  --color-secondary: #a855f7; /* EEC201 */
+  --color-tertiary: #4b5563;
+  --color-neutral-white: #e5e7eb;
 
   @keyframes spin {
     to {
@@ -20,12 +20,32 @@
   }
 }
 
+::root {
+  --header-heiht: 0px;
+}
+
+@layer base {
+  .mainTitle {
+    @apply font-patrickHand text-4xl text-center font-bold;
+  }
+
+  .mainInfoText {
+    @apply font-patrickHand text-2xl text-neutral-white
+  }
+}
+
 @layer components {
+  .hero-section {
+    min-height: calc(100vh - var(--header-height));
+    /* Debug background */
+    /* background: rgba(255, 255, 255, 0.05); */
+  }
+
   .screenMain {
     width: min(90%, 1200px);
     margin-inline: auto;
   }
-  
+
   /* Helper Classes */
   .flexrow-center {
     display: flex;

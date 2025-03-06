@@ -1,7 +1,13 @@
+import ChessHeroSection from '../../sections/chess-page/ChessHeroSection';
+import ChessIntroduction from '../../sections/chess-page/ChessIntroduction';
+
 const ChessCoursePage = () => {
   return (
-    <div>ChessCoursePage</div>
-  )
-}
+    <div>
+      <ChessHeroSection />
+      <ChessIntroduction />
+    </div>
+  );
+};
 
-export default ChessCoursePage
+export default ChessCoursePage;
