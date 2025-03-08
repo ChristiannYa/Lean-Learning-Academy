@@ -2,6 +2,7 @@ import { Outlet } from 'react-router-dom';
 import Nav from './Nav';
 import { useEffect } from 'react';
 
+import '../styles/ChessCurriculumCarousel.scss';
 import '../styles/Logo.scss';
 import '../styles/Nav.scss';
 import '../App.css';

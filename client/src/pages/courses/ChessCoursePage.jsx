@@ -1,11 +1,26 @@
 import ChessHeroSection from '../../sections/chess-page/ChessHeroSection';
-import ChessIntroduction from '../../sections/chess-page/ChessIntroduction';
+import ChessIntroductionCard from '../../sections/chess-page/ChessIntroductionCard';
+import ChessCurriculumCarousel from '../../sections/chess-page/ChessCurriculumCarousel';
+import { chessInformationCards } from '../../constants/chess-information-cards';
 
 const ChessCoursePage = () => {
   return (
     <div>
       <ChessHeroSection />
-      <ChessIntroduction />
+      <div className="flex flex-wrap gap-6 justify-center p-8">
+        {chessInformationCards.map((card) => (
+          <ChessIntroductionCard
+            key={card.id}
+            title={card.title}
+            content={card.content}
+            sourceLink={card.sourceLink}
+            sourceLinkText={card.sourceLinkText}
+          />
+        ))}
+      </div>
+      <div className="screenMain">
+        <ChessCurriculumCarousel />
+      </div>
     </div>
   );
 };

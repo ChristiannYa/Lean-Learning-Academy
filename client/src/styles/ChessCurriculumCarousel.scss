@@ -1,0 +1,26 @@
+.swiper {
+  width: 100%;
+}
+
+.swiper-slide {
+  max-width: 450px;
+
+  @media (max-width: 450px) {
+    width: 100%;
+  }
+}
+
+.swiper-pagination {
+  @media (max-width: 1024px) { 
+    display: none;
+  }
+}
+
+.swiper-pagination-bullet {
+  opacity: 0.2 !important;
+  transition: opacity 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1 !important;
+}

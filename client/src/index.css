@@ -8,10 +8,13 @@
   --font-leagueSpartan: 'League Spartan', sans-serif;
   --font-patrickHand: 'Patrick Hand SC', cursive;
 
-  --color-primary: #EEC201; /* a855f7 */
+  --color-primary: #eec201; /* a855f7 */
   --color-secondary: #a855f7; /* EEC201 */
   --color-tertiary: #4b5563;
   --color-neutral-white: #e5e7eb;
+
+  --shadow-chessCard: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+    rgba(0, 0, 0, 0.23) 0px 6px 6px;
 
   @keyframes spin {
     to {
@@ -30,7 +33,7 @@
   }
 
   .mainInfoText {
-    @apply font-patrickHand text-2xl text-neutral-white
+    @apply font-patrickHand text-2xl text-neutral-white;
   }
 }
 
@@ -45,7 +48,7 @@
     width: min(90%, 1200px);
     margin-inline: auto;
   }
-
+  
   /* Helper Classes */
   .flexrow-center {
     display: flex;

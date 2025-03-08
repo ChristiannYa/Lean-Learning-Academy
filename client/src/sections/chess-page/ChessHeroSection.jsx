@@ -7,10 +7,10 @@ const ChessHeroSection = () => {
       <div className="flexcol-center screenMain">
         <div className="text-white">
           <div className="flexrow-center gap-x-1">
-            <h1 className="mainTitle">Master The Basics of Chess</h1> 
+            <h1 className="mainTitle">Master The Basics of Chess</h1>
           </div>
           <h2 className="mainInfoText text-center font-bold">
-            Guaranteed 700 ELO score to get you started
+            Guaranteed 800 ELO score to get you started
           </h2>
           <h3 className="mainInfoText text-center">
             Learn essential tactics, positioning principles, how to think in
@@ -24,7 +24,9 @@ const ChessHeroSection = () => {
           alt=""
           className="rounded-sm mb-5"
         />
-        <button className='text-white font-patrickHand text-3xl cursor-pointer'>Start Learning Now</button>
+        <button className="text-white font-patrickHand text-3xl cursor-pointer">
+          Start Learning Now
+        </button>
       </div>
     </section>
   );
