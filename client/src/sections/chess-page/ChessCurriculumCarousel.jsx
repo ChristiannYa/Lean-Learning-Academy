@@ -10,12 +10,10 @@ const ChessCurriculumCards = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <div className="font-leagueSpartan mx-auto px-4 py-12">
-      <h2 className="text-3xl max-md:text-2xl text-primary font-bold text-center mb-12">
-        6-Month Chess Curriculum
-      </h2>
+    <div className="mx-auto px-4 py-12">
+      <h2 className="subtitle">6-Month Chess Curriculum</h2>
 
-      <div>
+      <div className="pt-12 font-leagueSpartan">
         <Swiper
           effect="coverflow"
           grabCursor={true}
@@ -30,7 +28,6 @@ const ChessCurriculumCards = () => {
           }}
           pagination={{
             clickable: true,
-            // Set only the base color for all bullets
             renderBullet: (_, className) => {
               return `<span class="${className}" style="background-color: var(--color-primary);"></span>`;
             },

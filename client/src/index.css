@@ -32,8 +32,16 @@
     @apply font-patrickHand text-4xl text-center font-bold;
   }
 
+  .subtitle {
+    @apply text-primary font-leagueSpartan font-bold text-3xl max-md:text-2xl text-center;
+  }
+
   .mainInfoText {
     @apply font-patrickHand text-2xl text-neutral-white;
+  }
+
+  .regularText {
+    @apply font-leagueSpartan text-xl text-neutral-white;
   }
 }
 

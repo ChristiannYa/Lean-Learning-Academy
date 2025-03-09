@@ -1,7 +1,8 @@
 import ChessHeroSection from '../../sections/chess-page/ChessHeroSection';
-import ChessIntroductionCard from '../../sections/chess-page/ChessIntroductionCard';
+import ChessInformationCard from '../../sections/chess-page/ChessInformationCard';
 import ChessCurriculumCarousel from '../../sections/chess-page/ChessCurriculumCarousel';
 import { chessInformationCards } from '../../constants/chess-information-cards';
+import AboutInstructor from '../../sections/chess-page/AboutInstructor';
 
 const ChessCoursePage = () => {
   return (
@@ -9,7 +10,7 @@ const ChessCoursePage = () => {
       <ChessHeroSection />
       <div className="flex flex-wrap gap-6 justify-center p-8">
         {chessInformationCards.map((card) => (
-          <ChessIntroductionCard
+          <ChessInformationCard
             key={card.id}
             title={card.title}
             content={card.content}
@@ -21,6 +22,7 @@ const ChessCoursePage = () => {
       <div className="screenMain">
         <ChessCurriculumCarousel />
       </div>
+      <AboutInstructor />
     </div>
   );
 };

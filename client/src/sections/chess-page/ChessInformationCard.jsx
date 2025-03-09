@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 const ChessIntroductionCard = ({ title, content, sourceLink, sourceLinkText }) => {
   return (
     <div className="w-[400px] font-leagueSpartan bg-white/5 shadow-chessCard rounded-md p-4">
-      <h2 className="text-xl text-neutral-white">{title}</h2>
+      <h2 className="text-2xl text-neutral-white">{title}</h2>
       <hr className="h-[1px] mx-auto my-1.5 bg-white/15 border-0 rounded-sm"/>
-      <p className="text-neutral-white text-lg/6 text-justify">
+      <p className="regularText">
         {content}
       </p>
       {sourceLink && (
