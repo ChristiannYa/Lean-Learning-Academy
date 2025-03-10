@@ -33,10 +33,10 @@
   }
 
   .subtitle {
-    @apply text-primary font-leagueSpartan font-bold text-3xl max-md:text-2xl text-center;
+    @apply text-primary font-leagueSpartan font-bold text-3xl max-md:text-2xl text-center mb-2;
   }
 
-  .mainInfoText {
+  .mainText {
     @apply font-patrickHand text-2xl text-neutral-white;
   }
 
@@ -46,7 +46,7 @@
 }
 
 @layer components {
-  .hero-section {
+  .heroSection {
     min-height: calc(100vh - var(--header-height));
     /* Debug background */
     /* background: rgba(255, 255, 255, 0.05); */
@@ -55,6 +55,10 @@
   .screenMain {
     width: min(90%, 1200px);
     margin-inline: auto;
+  }
+
+  .page {
+    @apply space-y-12 py-6
   }
   
   /* Helper Classes */

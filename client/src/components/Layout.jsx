@@ -1,6 +1,8 @@
 import { Outlet } from 'react-router-dom';
-import Nav from './Nav';
 import { useEffect } from 'react';
+import ScrollToTop from './ScrolltoTop';
+
+import Nav from './Nav';
 
 import '../styles/ChessCurriculumCarousel.scss';
 import '../styles/Logo.scss';
@@ -27,12 +29,15 @@ const Layout = () => {
   }, []);
 
   return (
-    <div className="bg-tertiary min-h-screen">
-      <Nav />
-      <main style={{ paddingTop: 'var(--header-height)' }}>
-        <Outlet />
-      </main>
-    </div>
+    <>
+      <ScrollToTop />
+      <div className="bg-tertiary min-h-screen">
+        <Nav />
+        <main style={{ paddingTop: 'var(--header-height)' }}>
+          <Outlet />
+        </main>
+      </div>
+    </>
   );
 };
 

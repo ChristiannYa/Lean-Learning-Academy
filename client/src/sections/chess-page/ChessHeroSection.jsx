@@ -3,16 +3,16 @@ import chessPageImages from '../../assets/images/chess-page';
 
 const ChessHeroSection = () => {
   return (
-    <section className="hero-section flexcol-center">
+    <section className="heroSection flexcol-center">
       <div className="flexcol-center screenMain">
         <div className="text-white">
           <div className="flexrow-center gap-x-1">
             <h1 className="mainTitle">Master The Basics of Chess</h1>
           </div>
-          <h2 className="mainInfoText text-center font-bold">
+          <h2 className="mainText text-center font-bold">
             Guaranteed 800 ELO score to get you started
           </h2>
-          <h3 className="mainInfoText text-center">
+          <h3 className="mainText text-center">
             Learn essential tactics, positioning principles, how to think in
             chess, and more!
           </h3>

@@ -6,9 +6,9 @@ import AboutInstructor from '../../sections/chess-page/AboutInstructor';
 
 const ChessCoursePage = () => {
   return (
-    <div>
+    <div className="page">
       <ChessHeroSection />
-      <div className="flex flex-wrap gap-6 justify-center p-8">
+      <div className="flex flex-wrap gap-6 justify-center">
         {chessInformationCards.map((card) => (
           <ChessInformationCard
             key={card.id}

@@ -1,10 +1,10 @@
-const About = () => {
+const HeroSection = () => {
   return (
-    <section className="">
-      <h1 className="mainTitle text-primary mb-2">
+    <section>
+      <h1 className="mainTitle text-primary">
         <b>Welcome to The Lean Learning Academy!</b>
       </h1>
-      <div className="mainInfoText text-justify">
+      <div className="mainText text-justify">
         Have you ever wanted to learn a new skill, but didn&apos;t know where to
         start? Our academy provides the guidance you need to achieve your goals.
         <br />
@@ -25,4 +25,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default HeroSection;

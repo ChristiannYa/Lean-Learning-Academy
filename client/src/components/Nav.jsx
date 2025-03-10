@@ -5,7 +5,7 @@ import { navLinks } from '../constants/nav-links';
 
 const Nav = () => {
   return (
-    <header className="nav">
+    <header className="nav shadow-md">
       <Logo />
       <nav className="nav__navigation">
         <ul className="nav__links-container">

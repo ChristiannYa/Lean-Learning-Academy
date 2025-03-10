@@ -1,6 +1,6 @@
 const AboutInstructor = () => {
   return (
-    <section className="screenMain space-y-2 py-12">
+    <section className="screenMain">
       <h1 className="subtitle">Christian Lopez - Coach</h1>
       <div className="regularText text-justify">
         <p>

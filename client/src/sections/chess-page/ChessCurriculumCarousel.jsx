@@ -10,10 +10,10 @@ const ChessCurriculumCards = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <div className="mx-auto px-4 py-12">
+    <div className="mx-auto">
       <h2 className="subtitle">6-Month Chess Curriculum</h2>
 
-      <div className="pt-12 font-leagueSpartan">
+      <div className="font-leagueSpartan">
         <Swiper
           effect="coverflow"
           grabCursor={true}
