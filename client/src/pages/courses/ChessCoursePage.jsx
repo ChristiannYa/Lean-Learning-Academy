@@ -6,7 +6,7 @@ import AboutInstructor from '../../sections/chess-page/AboutInstructor';
 
 const ChessCoursePage = () => {
   return (
-    <div className="page">
+    <div className="pageHeroCentered">
       <ChessHeroSection />
       <div className="flex flex-wrap gap-6 justify-center">
         {chessInformationCards.map((card) => (

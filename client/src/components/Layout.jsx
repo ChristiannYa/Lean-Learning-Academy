@@ -33,6 +33,8 @@ const Layout = () => {
       <ScrollToTop />
       <div className="bg-tertiary min-h-screen">
         <Nav />
+        {/* Add spacing at the top of the main content to avoid 
+        content being hidden behind the fixed navbar*/}
         <main style={{ paddingTop: 'var(--header-height)' }}>
           <Outlet />
         </main>

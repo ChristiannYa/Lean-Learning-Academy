@@ -5,7 +5,6 @@ import NotFoundPage from './pages/main/NotFoundPage.jsx';
 
 // Main pages
 import AboutUsPage from './pages/main/AboutUsPage.jsx';
-import CoursesPage from './pages/main/CoursesPage.jsx';
 import ShopPage from './pages/main/ShopPage.jsx';
 import LandingPage from './pages/main/HomePage.jsx';
 import LoginPage from './pages/main/LoginPage.jsx';
@@ -36,10 +35,6 @@ const mainRoutes = [
 ];
 
 const courseRoutes = [
-  {
-    path: '/courses',
-    element: <CoursesPage />,
-  },
   {
     path: '/courses/chess',
     element: <ChessCoursePage />,

@@ -58,7 +58,11 @@
   }
 
   .page {
-    @apply space-y-12 py-6
+    @apply space-y-12 py-6;
+  }
+
+  .pageHeroCentered {
+    @apply space-y-12 pb-6;
   }
   
   /* Helper Classes */
