@@ -1,4 +1,4 @@
-import { instructors } from '../../constants/courses-instructors';
+import { instructors } from '../../constants/about-us';
 import AboutIntroductionSection from '../../sections/main/about-us-page/AboutIntroductionSection';
 import InstructorCard from '../../sections/main/about-us-page/InstructorCard';
 import MissionVisionSection from '../../sections/main/about-us-page/MissionVisionSection';

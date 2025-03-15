@@ -1,7 +1,7 @@
 import { NavLink, useLocation } from 'react-router-dom';
 
 import Logo from '../components/Logo';
-import { navLinks } from '../constants/nav-links';
+import { navLinks } from '../constants/layout';
 
 const Nav = () => {
   const location = useLocation();

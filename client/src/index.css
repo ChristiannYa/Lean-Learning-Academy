@@ -64,7 +64,39 @@
   .pageHeroCentered {
     @apply space-y-12 pb-6;
   }
-  
+
+  .instructorBanner {
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0),
+      #ffffff60 50%,
+      #ffffff95
+    );
+    color: var(--color-tertiary);
+    border-radius: 2px;
+    font-size: 0.875rem;
+    font-weight: 600;
+
+    padding-block: 2px;
+    padding-right: 4px;
+
+    display: inline-block;
+  }
+
+  .customLineBreak {
+    width: min(100%, 800px);
+    height: 2px;
+    background: linear-gradient(
+      to right,
+      rgba(255, 0, 0, 0),     /* transparent white at the left edge */
+      var(--color-primary) 30%, /* solid var(--color-primary) at 30% from left */
+      var(--color-primary) 70%, /* solid var(--color-primary) until 70% from left */
+      rgba(255, 0, 0, 0)      /* transparent white at the right edge */
+    );
+    margin-block: 20px;
+    display: block;
+  }
+
   /* Helper Classes */
   .flexrow-center {
     display: flex;

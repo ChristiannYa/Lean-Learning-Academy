@@ -1,15 +1,15 @@
 import ChessHeroSection from '../../sections/chess-page/ChessHeroSection';
 import ChessInformationCard from '../../sections/chess-page/ChessInformationCard';
 import ChessCurriculumCarousel from '../../sections/chess-page/ChessCurriculumCarousel';
-import { chessInformationCards } from '../../constants/chess-information-cards';
 import AboutInstructor from '../../sections/chess-page/AboutInstructor';
+import { informationCards } from '../../constants/courses/chess';
 
 const ChessCoursePage = () => {
   return (
     <div className="pageHeroCentered">
       <ChessHeroSection />
       <div className="flex flex-wrap gap-6 justify-center">
-        {chessInformationCards.map((card) => (
+        {informationCards.map((card) => (
           <ChessInformationCard
             key={card.id}
             title={card.title}

@@ -1,4 +1,3 @@
-import styles from './ChessHeroSection.module.css';
 import chessPageImages from '../../assets/images/chess-page';
 
 const ChessHeroSection = () => {
@@ -17,7 +16,7 @@ const ChessHeroSection = () => {
             chess, and more!
           </h3>
         </div>
-        <div className={styles.customLineBreak}></div>
+        <div className="customLineBreak"></div>
         <img
           src={chessPageImages.chess}
           width={380}

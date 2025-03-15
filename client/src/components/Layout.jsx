@@ -4,7 +4,7 @@ import ScrollToTop from './ScrolltoTop';
 
 import Nav from './Nav';
 
-import '../styles/ChessCurriculumCarousel.scss';
+import '../styles/Carousel.scss';
 import '../styles/Logo.scss';
 import '../styles/Nav.scss';
 import '../App.css';
