@@ -39,7 +39,7 @@
     overflow-y: auto;
 
     &-item {
-      border-left: 3px solid var(--color-primary);
+      border-left: 3px solid var(--slider-theme-color, var(--color-primary));
       padding-left: 1rem;
     }
 

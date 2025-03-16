@@ -4,9 +4,10 @@ import ScrollToTop from './ScrolltoTop';
 
 import Nav from './Nav';
 
-import '../styles/Carousel.scss';
+import '../styles/CurriculumSlider.scss';
 import '../styles/Logo.scss';
 import '../styles/Nav.scss';
+import '../styles/ChessDecorationCarousel.scss';
 import '../App.css';
 
 const Layout = () => {

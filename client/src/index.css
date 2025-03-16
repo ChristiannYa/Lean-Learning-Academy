@@ -9,12 +9,14 @@
   --font-patrickHand: 'Patrick Hand SC', cursive;
 
   --color-primary: #eec201; /* a855f7 */
-  --color-secondary: #a855f7; /* EEC201 */
+  --color-secondary: #a855f7; /* eec201 */
   --color-tertiary: #4b5563;
   --color-neutral-white: #e5e7eb;
+  --color-chess: #24292e;
+  --color-japanese: #ff6ec7;
 
-  --shadow-chessCard: rgba(0, 0, 0, 0.19) 0px 10px 20px,
-    rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  --shadow-chessCard: var(--color-chess) 2px 5px 2px,
+    var(--color-chess) 0px 2px 0px;
 
   @keyframes spin {
     to {
@@ -33,7 +35,8 @@
   }
 
   .subtitle {
-    @apply text-primary font-leagueSpartan font-bold text-3xl max-md:text-2xl text-center mb-2;
+    @apply font-leagueSpartan font-bold text-3xl max-md:text-2xl text-center mb-2;
+    color: var(--subtitle-color, var(--color-primary));
   }
 
   .mainText {
@@ -41,7 +44,7 @@
   }
 
   .regularText {
-    @apply font-leagueSpartan text-xl text-neutral-white;
+    @apply font-leagueSpartan text-lg text-neutral-white;
   }
 }
 
@@ -53,7 +56,12 @@
   }
 
   .screenMain {
-    width: min(90%, 1200px);
+    width: min(96%, 1200px);
+    margin-inline: auto;
+  }
+
+  .screenLarge {
+    width: min(96%, 1600px);
     margin-inline: auto;
   }
 
@@ -88,10 +96,14 @@
     height: 2px;
     background: linear-gradient(
       to right,
-      rgba(255, 0, 0, 0),     /* transparent white at the left edge */
-      var(--color-primary) 30%, /* solid var(--color-primary) at 30% from left */
-      var(--color-primary) 70%, /* solid var(--color-primary) until 70% from left */
-      rgba(255, 0, 0, 0)      /* transparent white at the right edge */
+      rgba(255, 0, 0, 0),
+      /* 
+        use a custom line color as the gradient's start color, 
+        else the default color 
+      */
+        var(--line-color, var(--color-primary)) 30%,
+      var(--line-color, var(--color-primary)) 70%,
+      rgba(255, 0, 0, 0)
     );
     margin-block: 20px;
     display: block;

@@ -1,7 +1,12 @@
 const AboutInstructor = () => {
   return (
     <section className="screenMain">
-      <h1 className="subtitle">Christian Lopez - Coach</h1>
+      <h1
+        className="subtitle"
+        style={{ '--subtitle-color': 'var(--color-chess)' }}
+      >
+        Christian Lopez - Chess Coach
+      </h1>
       <div className="regularText text-justify">
         <p>
           I started playing chess in July 2024, and from the very first game, I

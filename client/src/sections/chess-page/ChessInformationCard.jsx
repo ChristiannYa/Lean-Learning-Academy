@@ -2,21 +2,19 @@ import PropTypes from 'prop-types';
 
 const ChessIntroductionCard = ({ title, content, sourceLink, sourceLinkText }) => {
   return (
-    <div className="w-[400px] font-leagueSpartan bg-white/5 shadow-chessCard rounded-md p-4">
-      <h2 className="text-2xl text-neutral-white">{title}</h2>
-      <hr className="h-[1px] mx-auto my-1.5 bg-white/15 border-0 rounded-sm"/>
-      <p className="regularText">
-        {content}
-      </p>
+    <div className="w-[320px] font-leagueSpartan bg-white/5 shadow-chessCard rounded-md p-3.5">
+      <h2 className="text-xl text-neutral-white">{title}</h2>
+      <hr className="h-[1px] mx-auto my-0.5 bg-chess/20 border-0 rounded-sm" />
+      <p className="regularText">{content}</p>
       {sourceLink && (
         <div className="mt-2">
-          <a 
-            href={sourceLink} 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="text-neutral-white/60 hover:text-primary/90 text-sm underline"
+          <a
+            href={sourceLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-neutral-white/60 hover:text-chess/90 text-sm underline"
           >
-            {sourceLinkText || "Source"}
+            {sourceLinkText || 'Source'}
           </a>
         </div>
       )}
